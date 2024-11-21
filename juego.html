@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página del Club</title>
+    <link rel="stylesheet" href="style.juego.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        main {
+            margin: 20px;
+        }
+        .quiz-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background: #004080;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #003060;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo del club -->
+        <img src="logo.png" alt="Logo del Club" style="height: 60px; width: auto; margin-bottom: 10px;">
+        <h1>Bienvenidos al Club Atlético Las Palmas</h1>
+        <p>Conectando a nuestra comunidad</p>
+    </header>
+    <main>
+        <section class="quiz-container">
+            <h2>¡Ponte a prueba!</h2>
+            <p id="question"></p>
+            <div id="options"></div>
+            <p id="result"></p>
+            <button onclick="startGame()">Iniciar</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Club Atlético Las Palmas - Unidos por la pasión del deporte. Unidos somos más fuertes.</p>
+      </footer>    
+    <script src="app.js"></script>
+</body>
+</html>
+
+

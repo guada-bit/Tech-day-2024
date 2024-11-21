@@ -1,0 +1,17 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const schedule = document.getElementById("schedule");
+  
+    addActivityButton.addEventListener("click", () => {
+      const newActivity = document.createElement("article");
+      newActivity.innerHTML = `<h3>🔥 Clase de HIIT</h3><p>Viernes a las 6:00 PM en el parque central.</p>`;
+      schedule.appendChild(newActivity);
+    });
+  
+    const contactForm = document.getElementById("contact-form");
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("¡Gracias por contactarnos! Nos pondremos en contacto pronto.");
+      contactForm.reset();
+    });
+  });
+  
